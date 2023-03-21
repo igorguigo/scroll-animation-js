@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.engrenagem{
+    /* animation: girar 1s infinite linear;
+    transform: translate(-50%, -50%); */
+}
+
+@keyframes girar {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+  @keyframes spin { 
+    100% { 
+        transform: rotate(180deg);
+    } 
+}
+
+@keyframes scale {
+    100% {
+         transform: scaleX(2) scaleY(2);
+    }
+}
+
+
+
+
+@keyframes left{
+  33%{
+    top: 25%;
+    left: 25%;
+    @apply bg-white;
+  }
+
+  66%{
+    top: 85%;
+    left: 85%;
+    @apply bg-lime-700;
+  }
+
+  100%{
+    top: 0%;
+    left: 85%;
+    @apply bg-cyan-700;
+  }
+}
+
+@keyframes right{
+  33%{
+    top: 25%;
+    right: 25%;
+    @apply bg-white;
+  }
+
+  66%{
+    top: 85%;
+    right: 85%;
+    @apply bg-lime-700;
+  }
+
+  100%{
+    top: 0%;
+    right: 85%;
+    @apply bg-cyan-700;
+  }
+}
+
+
